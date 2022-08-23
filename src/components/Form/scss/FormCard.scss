@@ -1,0 +1,25 @@
+@import '../../../asset/scss/typography.scss';
+
+.FormCard {
+  @extend %center;
+  flex-direction: column;
+  justify-content: unset;
+  width: 30%;
+  padding: 2%;
+}
+
+.FormHeadingContainer {
+  padding: 1vw;
+}
+
+.FormHeading {
+  font-size: 2vw;
+  color: $white;
+}
+
+.FormBox {
+  background-color: $secondaryColor;
+  width: 100%;
+  padding: 3%;
+  filter: drop-shadow(0.1rem 0.1rem 0.4rem rgba(0, 0, 0, 0.5));
+}

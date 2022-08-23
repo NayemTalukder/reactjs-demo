@@ -1,0 +1,8 @@
+@import '../../../asset/scss/typography.scss';
+
+.Overlay {
+  @extend %cover;
+  @extend %absolute;
+  background-color: $primaryColor;
+  opacity: .7;
+}

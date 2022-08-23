@@ -1,0 +1,58 @@
+@import '../../../asset/scss/typography.scss';
+
+.Modal {
+  @extend %center;
+  @extend %cover;
+  @extend %absolute;
+  background-color: $primaryColor;
+  opacity: .95;
+}
+
+.Modal-Wrapper {
+  @extend %center;
+  flex-direction: column;
+  background-color: $white;
+  color: $primaryColor;
+  width: 30vw;
+  border-radius: .3vw;
+  // box-shadow: '1px 2px 9px #F4AAB9';
+}
+
+.Modal-Header {
+  @extend %center;
+  position: relative;
+  flex-direction: column;
+  width: 100%;
+  border-bottom: 2px solid $primaryColor;
+  // padding: 1vw;
+}
+
+.Main-header {
+  font-size: 1vw;
+}
+
+.closeIcon {
+  position: relative;
+  top: -2vw;
+  right: -13.5vw;
+  color: $tertiaryColor;
+  cursor: pointer;
+}
+
+.closeIcon:hover {
+  width: 2.1vw;
+  height: 2.1vw;
+}
+
+.Modal-Body {
+  @extend %center;
+  padding: 1vw;
+  width: 100%;
+  border-bottom: 2px solid $primaryColor;
+}
+
+.Modal-Footer {
+  @extend %center;
+  width: 100%;
+  padding: 1vw;
+}

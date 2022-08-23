@@ -1,0 +1,11 @@
+@import '../../../asset/scss/typography.scss';
+
+.Footer {
+  @extend %center;
+  // @extend %bottomFixed;
+  height: 6vh;
+  width: 100vw;
+  background-color: $black;
+  color: $white;
+  margin-top: 5vh;
+}

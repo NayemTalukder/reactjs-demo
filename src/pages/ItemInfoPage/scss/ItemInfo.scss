@@ -1,0 +1,82 @@
+@import '../../../asset/scss/typography.scss';
+
+.ItemInfo {
+  @extend %center;
+  flex-direction: column;
+  justify-content: unset;
+  width: 60vw;
+  margin-top: 5vh;
+  min-height: 70vh;
+  color: $white;
+  // background-color: $primaryColor;
+  // border-radius: .3vw;
+}
+
+.HeadingContainer {
+  @extend %center;
+  font-size: 3rem;
+}
+
+.table {
+  @extend %center;
+  flex-direction: column;
+  width: 75vw;
+  color: $white;
+  background-color: $primaryColor;
+
+  thead {
+    width: 100%;
+
+    th {
+      background-color: $tertiaryColor;
+      padding: 1vw;
+      color: $white;
+      border-right: .25vw solid $primaryColor;
+      width: 20%;
+    }
+  }
+
+  tbody {
+    width: 100%;
+
+    td {
+      background-color: $white;
+      color: $secondaryColor;
+      padding: .5vw;
+      width: 15%;
+      border-right: .25vw solid $primaryColor;
+      text-align: center;
+      // display: flex;
+      justify-content: center;
+
+      select {
+        width: 90%;
+        height: 1.8vw;
+        margin-top: .3vw;
+      }
+  
+      a {
+        text-decoration: none;
+        color: $white;
+      }
+  
+      a:hover {
+        color: $tertiaryColor;
+      }
+    }
+  }
+  
+  tr {
+    width: 100%;
+    display: flex;
+    border-bottom: .2vw solid $primaryColor;
+  }
+
+}
+
+.ActionBar {
+  @extend %center;
+  margin-top: 1vw;
+  width: 100%;
+  justify-content: space-between;
+}

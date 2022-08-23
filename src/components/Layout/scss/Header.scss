@@ -1,0 +1,38 @@
+@import '../../../asset/scss/typography.scss';
+
+.Header {
+  @extend %center;
+  align-items: unset;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 8vh;
+  background-color: $black;
+}
+
+.NavContainer {
+  @extend %center;
+  justify-content: space-between;
+  // width: 70%;
+}
+
+.UserNavContainer {
+  @extend %center;
+}
+
+.NavItem {
+  margin-right: 2vw;
+  text-decoration: none;
+  color: $white;
+}
+
+.NavItem {
+  margin-right: 2vw;
+  text-decoration: none;
+  color: $white;
+}
+
+.NavItem:hover {
+  color: $red;
+}
+

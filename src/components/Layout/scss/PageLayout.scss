@@ -1,0 +1,13 @@
+@import '../../../asset/scss/typography.scss';
+
+.PageLayout {
+  @extend %center;
+  @extend %coverWidth;
+  justify-content: unset;
+  flex-direction: column;
+  background-color: $bgColor;
+}
+
+.Children {
+  min-height: 81vh;
+}

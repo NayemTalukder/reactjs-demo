@@ -1,0 +1,19 @@
+@import '../../../asset//scss/typography.scss';
+
+.ItemInfoCreate {
+  @extend %center;
+  align-items: unset;
+  width: 100vw;
+  background-color: $primaryColor;
+}
+
+.FooterSubmitButton {
+  margin-left: 1vw;
+  color: black;
+  cursor: pointer;
+}
+
+.FooterSubmitButton:hover {
+  color: $white;
+  font-size: 1.3vw;
+}

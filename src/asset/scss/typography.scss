@@ -1,0 +1,240 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+// variables [colors]
+$primaryColor: #1b1c1c;
+$secondaryColor: #000000;
+$tertiaryColor: #ff0000;
+// $primaryColor: #9109F6;
+// $secondaryColor: #09F691;
+// $tertiaryColor: #F69109;
+
+$white: #FFFFFF;
+$black: #000000;
+$green: #096e20;
+$red: #ff0000;
+$bgColor: #1b1c1c;
+$placeholder: #857E7E;
+$iconPurple: #a828a1;
+
+// fonts
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&display=swap');
+
+
+// Extend/Inheritance
+%center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+%cover {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+%coverWidth {
+  @extend %cover;
+  height: unset;
+}
+
+%marginAuto {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+%absolute {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+%topFixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+%bottomFixed {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+// Function
+// @function pow($base, $exponent) {
+//   $result: 1;
+//   @for $_ from 1 through $exponent {
+//     $result: $result * $base;
+//   }
+//   @return $result;
+// }
+
+// .sidebar {
+//   float: left;
+//   margin-left: pow(4, 3) * 1px;
+// }
+
+
+/*----------------------------------------------
+Color
+------------------------------------------------*/
+.color-primary { color: $primaryColor !important; }
+.color-secondary { color: $secondaryColor !important; }
+.color-tertiary { color: $tertiaryColor !important; }
+
+.bg-green {
+  background-color: $green;
+}
+
+.bg-purple {
+  background-color: $iconPurple;
+}
+
+//  Text
+.text-center { text-align: center !important; }
+.text-white { color: $white !important; }
+
+/*----------------------------------------------
+Font Family
+------------------------------------------------*/
+.font-roboto-italic { 
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 300;
+}
+
+.font-roboto { 
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+}
+
+/*----------------------------------------------
+Font Size
+------------------------------------------------*/
+.font-s-1 {
+  font-size: 1vw;
+}
+
+.font-s-2 {
+  font-size: 2vw;
+}
+
+/*----------------------------------------------
+Placement Adjustment
+------------------------------------------------*/
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.size-1 {
+  width: 1vw;
+  height: 1vw;
+}
+
+.size-2 {
+  width: 2vw;
+  height: 2vw;
+}
+
+.mr-b--1_7 {
+  margin-bottom: -1.7vw;
+}
+
+.mr-b--2 {
+  margin-bottom: -2vw;
+}
+
+.mr-t_1 {
+  margin-top: .1vw;
+}
+
+.mr-t_2 {
+  margin-top: .2vw;
+}
+
+.mr-t_3 {
+  margin-top: .3vw;
+}
+
+/*----------------------------------------------
+Flexbox Adjustment
+------------------------------------------------*/
+.d-flex {
+  display: flex;
+}
+
+.d-block {
+  display: block;
+}
+
+.d-none {
+  display: none;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.flex-9 {
+  flex: 9;
+}
+
+.flex-2 {
+  flex: 2;
+}
+
+.flex-8 {
+  flex: 8;
+}
+
+/*----------------------------------------------
+User Experience
+------------------------------------------------*/
+.cursor-pointer {
+  cursor: pointer;
+}
+
+/*----------------------------------------------
+Adjust Color
+------------------------------------------------*/
+.color-p {
+  color: $primaryColor
+}
+
+.color-s {
+  color: $secondaryColor
+}
+
+.color-t {
+  color: $tertiaryColor
+}
+
+.color-ip {
+  color: $iconPurple
+}
+

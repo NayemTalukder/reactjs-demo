@@ -1,0 +1,1 @@
+export { ItemInfo, ItemInfo as ItemInfoPage } from './ItemInfo'

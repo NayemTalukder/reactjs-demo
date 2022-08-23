@@ -1,0 +1,58 @@
+@import '../../../asset/scss/typography.scss';
+
+.FormItem {
+  @extend %center;
+  align-items: unset;
+  flex-direction: column;
+
+  .FormItemLabelContainer {
+    padding-top: .5vw;
+    padding-bottom: .5vw;
+
+    .FormItemLabel {
+      font-size: 1.5vw;
+      color: $white;
+    }
+  }
+
+  .InputField, .selectField {
+    height: 2.5vw;
+    border: none;
+  }
+
+  .TextAreaField {
+    min-height: 4.5vw;
+    max-height: 80vh;
+    resize: vertical;
+    border: none;
+  }
+  
+  .InputField:focus, .TextAreaField:focus  {
+    border: 1px solid $tertiaryColor;
+  }
+
+  input[placeholder], textarea[placeholder] {
+    padding-left: 1vw;
+    color: $placeholder;
+    font-size: .9vw;
+  }
+
+  .inverse {
+    background-color: $primaryColor;
+    color: $white;
+  }
+
+  .MultiPlusIcon {
+    position: relative;
+    top: -27px;
+    right: -28.1vw;
+    cursor: pointer;
+  }
+
+  .MultiInput {
+    margin-top: -2vw;
+    color: $white;
+    // text-decoration: dashed;
+    font-size: 1vw;
+  }
+}

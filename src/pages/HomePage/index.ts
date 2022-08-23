@@ -1,0 +1,1 @@
+export { Home, Home as HomePage } from './Home'
